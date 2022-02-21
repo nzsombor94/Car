@@ -15,6 +15,13 @@ public class App {
 		car2.speedUp(10);
 		System.out.println(car);
 		System.out.println(car2);
+		
+		Car car3 = new Car();
+		Car.colorOfNextCar = "kék";
+		Car car4 = new Car();
+		Car.colorOfNextCar = "piros";
+		System.out.println(car3);
+		System.out.println(car4);
 	}
 
 }

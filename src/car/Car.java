@@ -2,6 +2,9 @@ package car;
 
 public class Car {
 
+	private static final int MAX_SPEED = 190;
+	public static String colorOfNextCar = "Fehér";
+	private String color = colorOfNextCar;
 	private int currentSpeed;
 	private int currentGear;
 	
@@ -17,11 +20,13 @@ public class Car {
 		currentGear = gear;
 	}
 	
+
+	
 	@Override
 	public String toString() {
-		return "Car [currentSpeed=" + currentSpeed + ", currentGear=" + currentGear + "]";
+		return "Car [color=" + color + ", currentSpeed=" + currentSpeed + ", currentGear=" + currentGear + "]";
 	}
-	
+
 	public int getCurrentSpeed() {
 		return currentSpeed;
 	}
@@ -29,6 +34,4 @@ public class Car {
 	public int getCurrentGear() {
 		return currentGear;
 	}
-	
-	
 }
